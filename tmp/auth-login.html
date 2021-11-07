@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Авторизация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    </head>
+    <style type="text/css">
+        .alert-danger{
+            text-indent: 20px;
+            border-radius: 2px 2px 7px 7px;
+            margin-left: 1.5px;
+            margin-right: 1.5px;
+        }
+    </style>
+    <body class="auth-body-bg">
+        <div>
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4">
+                        <div class="authentication-page-content p-4 d-flex align-items-center min-vh-100">
+                            <div class="w-100">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <div>
+                                            <div class="p-2 mt-5">
+                                                <form class="form-horizontal" id="authorization" name="form1" method="post">
+                                                    <div>
+                                                    <div class="text-center">    
+                                                        <h4 class="font-size-18 mt-4">С возвращением !</h4>
+                                                        <p class="text-muted">Необходимо авторизоваться</p>
+                                                    </div>
+                                                    <div class="p-2 mt-5">
+                                                            <div class="form-group auth-form-group-custom mb-4">
+                                                                
+                                                                <i class="ri-mail-line auti-custom-input-icon"></i>
+                                                                <label for="login">Логин</label>
+                                                                <input type="text" class="form-control" name="login" id="login" placeholder="Введите логин">
+                                                                <div class="form-control-feedback"></div>
+                                                            </div>
+
+                                                            <div class="form-group auth-form-group-custom mb-4">
+                                                                
+                                                                <i class="ri-user-3-line auti-custom-input-icon"></i>
+                                                                <label for="password">Пароль</label>
+                                                                <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль">
+                                                                <div class="form-control-feedback"></div>
+                                                            </div>
+
+                                                            <div class="mt-4 text-center">
+                                                                <button class="btn btn-primary w-md waves-effect waves-light" type="submit" id="auth">Войти</button>
+                                                            </div>
+
+                                                    </div>
+
+                                                    <div class="mt-5 text-center">
+                                                        <p>Не зарегистрированы ? <a href="?mode=reg" class="font-weight-medium text-primary"> Регистрация </a> </p>
+                                                    </div>
+                                                </div>
+                                        </form>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="authentication-bg" style="background-image: url(assets/images/authentication-bg.jpg);">
+                            <div class="bg-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JAVASCRIPT -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/auth.js"></script>
+    </body>
+</html>
