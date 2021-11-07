@@ -20,11 +20,6 @@ if (isset($_GET['mode'])){
     case 'main':
         require_once 'tmp/main.php';
         break;
-    case 'exit':
-        unset($_SESSION['IsAuth']);
-        setcookie("Token", '', time()-3600*3);
-        require_once 'tmp/auth-login.html';
-        break;
     default:
     require_once 'tmp/auth-login.html';
         break;
