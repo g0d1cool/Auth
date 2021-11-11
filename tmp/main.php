@@ -1,6 +1,9 @@
 <?
 session_start();
+if(!isset($_SESSION['name']) && !isset($_SESSION['IsAuth']))
+    header('Location: ../');
 ?>
+
 <!doctype html>
 <html lang="ru">
 
